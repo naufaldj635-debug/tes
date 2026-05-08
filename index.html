@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MNFR — Equilibrium Beyond Dimensions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&family=Syne:wght@300;400;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">MNFR</div>
+    <div class="nav-links">
+      <a href="#about" data-en="About" data-id="Tentang">About</a>
+      <a href="#philosophy" data-en="Philosophy" data-id="Filosofi">Philosophy</a>
+      <a href="#interests" data-en="Interests" data-id="Minat">Interests</a>
+      <a href="#framework" data-en="Framework" data-id="Kerangka">Framework</a>
+      <a href="#contact" data-en="Contact" data-id="Kontak">Contact</a>
+    </div>
+    <div class="nav-controls">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN / ID</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="line"></span>
+        <span data-en="Visionary Creator" data-id="Pencipta Visioner">Visionary Creator</span>
+        <span class="line"></span>
+      </div>
+      <h1 class="hero-name reveal">MNFR</h1>
+      <p class="hero-tagline reveal" data-en="Equilibrium Beyond Dimensions" data-id="Keseimbangan Melampaui Dimensi">Equilibrium Beyond Dimensions</p>
+      <div class="hero-sub reveal">
+        <p data-en="Muhammad Naufal Fawwaz Ramadhan" data-id="Muhammad Naufal Fawwaz Ramadhan">Muhammad Naufal Fawwaz Ramadhan</p>
+      </div>
+      <a href="#about" class="hero-cta reveal" data-en="Enter the Space" data-id="Masuki Ruang Ini">Enter the Space</a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span data-en="Scroll" data-id="Gulir">Scroll</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="section-label reveal">
+        <span class="num">01</span>
+        <span data-en="About Me" data-id="Tentang Saya">About Me</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 data-en="A Mind at the Intersection" data-id="Pikiran di Persimpangan">A Mind at the Intersection</h2>
+          <p data-en="A visionary creator who breathes at the intersection of artificial intelligence, creative philosophy, and modern digital systems. MNFR builds at the frontier where economics meets design, and where human thought is amplified by machine precision." 
+             data-id="Seorang pencipta visioner yang hidup di persimpangan kecerdasan buatan, filosofi kreatif, dan sistem digital modern. MNFR membangun di garis depan di mana ekonomi bertemu desain, dan di mana pemikiran manusia diperkuat oleh presisi mesin.">
+            A visionary creator who breathes at the intersection of artificial intelligence, creative philosophy, and modern digital systems. MNFR builds at the frontier where economics meets design, and where human thought is amplified by machine precision.
+          </p>
+          <p data-en="Every system has a soul. Every idea, a dimension. The mission is to find the equilibrium that makes both resonate." 
+             data-id="Setiap sistem memiliki jiwa. Setiap ide, sebuah dimensi. Misi ini adalah menemukan keseimbangan yang membuat keduanya beresonansi.">
+            Every system has a soul. Every idea, a dimension. The mission is to find the equilibrium that makes both resonate.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card glass">
+            <span class="stat-num">∞</span>
+            <span data-en="Dimensions Explored" data-id="Dimensi Dijelajahi">Dimensions Explored</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num">01</span>
+            <span data-en="Core Framework" data-id="Kerangka Inti">Core Framework</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num">∅</span>
+            <span data-en="Compromise on Vision" data-id="Kompromi pada Visi">Compromise on Vision</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="section philosophy" id="philosophy">
+    <div class="section-inner">
+      <div class="section-label reveal">
+        <span class="num">02</span>
+        <span data-en="Philosophy" data-id="Filosofi">Philosophy</span>
+      </div>
+      <div class="philosophy-grid">
+        <div class="phil-card glass reveal" data-delay="0">
+          <div class="phil-icon">⬡</div>
+          <h3 data-en="Equilibrium" data-id="Keseimbangan">Equilibrium</h3>
+          <p data-en="True power is not force — it is balance. Between chaos and order lives the most elegant solution." 
+             data-id="Kekuatan sejati bukan paksaan — melainkan keseimbangan. Di antara kekacauan dan keteraturan hidup solusi paling elegan.">
+            True power is not force — it is balance. Between chaos and order lives the most elegant solution.
+          </p>
+        </div>
+        <div class="phil-card glass reveal" data-delay="100">
+          <div class="phil-icon">◈</div>
+          <h3 data-en="Dimension" data-id="Dimensi">Dimension</h3>
+          <p data-en="Every problem exists in multiple layers. See beyond the surface, and the path reveals itself." 
+             data-id="Setiap masalah ada di berbagai lapisan. Lihat melampaui permukaan, dan jalan akan mengungkapkan dirinya.">
+            Every problem exists in multiple layers. See beyond the surface, and the path reveals itself.
+          </p>
+        </div>
+        <div class="phil-card glass reveal" data-delay="200">
+          <div class="phil-icon">⟁</div>
+          <h3 data-en="Minimalism" data-id="Minimalisme">Minimalism</h3>
+          <p data-en="Less, done with absolute intention, is always more. Clarity is the highest form of intelligence." 
+             data-id="Lebih sedikit, yang dilakukan dengan niat mutlak, selalu lebih baik. Kejelasan adalah bentuk kecerdasan tertinggi.">
+            Less, done with absolute intention, is always more. Clarity is the highest form of intelligence.
+          </p>
+        </div>
+        <div class="phil-card glass reveal" data-delay="300">
+          <div class="phil-icon">⬢</div>
+          <h3 data-en="Convergence" data-id="Konvergensi">Convergence</h3>
+          <p data-en="When art, science, and economics converge — something entirely new emerges. That edge is home." 
+             data-id="Ketika seni, ilmu pengetahuan, dan ekonomi bertemu — sesuatu yang sepenuhnya baru muncul. Tepian itu adalah rumah.">
+            When art, science, and economics converge — something entirely new emerges. That edge is home.
+          </p>
+        </div>
+      </div>
+      <blockquote class="phil-quote reveal">
+        <span data-en='"The most dangerous thinker is the one who has learned to think across borders."' 
+              data-id='"Pemikir paling berbahaya adalah mereka yang telah belajar berpikir lintas batas."'>
+          "The most dangerous thinker is the one who has learned to think across borders."
+        </span>
+        <cite>— MNFR</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section class="section interests" id="interests">
+    <div class="section-inner">
+      <div class="section-label reveal">
+        <span class="num">03</span>
+        <span data-en="Interests" data-id="Minat">Interests</span>
+      </div>
+      <div class="interests-list">
+        <div class="interest-item reveal" data-delay="0">
+          <span class="interest-num">01</span>
+          <div class="interest-content">
+            <h3 data-en="Artificial Intelligence" data-id="Kecerdasan Buatan">Artificial Intelligence</h3>
+            <p data-en="The new canvas of human possibility — intelligent systems that amplify, not replace." 
+               data-id="Kanvas baru kemungkinan manusia — sistem cerdas yang memperkuat, bukan menggantikan.">The new canvas of human possibility — intelligent systems that amplify, not replace.</p>
+          </div>
+          <span class="interest-glyph">◎</span>
+        </div>
+        <div class="interest-item reveal" data-delay="80">
+          <span class="interest-num">02</span>
+          <div class="interest-content">
+            <h3 data-en="Creative Thinking" data-id="Pemikiran Kreatif">Creative Thinking</h3>
+            <p data-en="Logic plus imagination — the rarest combination and the most potent creative weapon." 
+               data-id="Logika plus imajinasi — kombinasi paling langka dan senjata kreatif paling kuat.">Logic plus imagination — the rarest combination and the most potent creative weapon.</p>
+          </div>
+          <span class="interest-glyph">⌬</span>
+        </div>
+        <div class="interest-item reveal" data-delay="160">
+          <span class="interest-num">03</span>
+          <div class="interest-content">
+            <h3 data-en="Economic Systems" data-id="Sistem Ekonomi">Economic Systems</h3>
+            <p data-en="Markets are ecosystems. Understanding their rhythms reveals the pulse of civilization." 
+               data-id="Pasar adalah ekosistem. Memahami ritmenya mengungkapkan detak nadi peradaban.">Markets are ecosystems. Understanding their rhythms reveals the pulse of civilization.</p>
+          </div>
+          <span class="interest-glyph">⟐</span>
+        </div>
+        <div class="interest-item reveal" data-delay="240">
+          <span class="interest-num">04</span>
+          <div class="interest-content">
+            <h3 data-en="Futuristic Design" data-id="Desain Futuristik">Futuristic Design</h3>
+            <p data-en="Form is philosophy made visible. Every pixel carries intent, every space — meaning." 
+               data-id="Bentuk adalah filosofi yang terlihat. Setiap piksel membawa maksud, setiap ruang — makna.">Form is philosophy made visible. Every pixel carries intent, every space — meaning.</p>
+          </div>
+          <span class="interest-glyph">◫</span>
+        </div>
+        <div class="interest-item reveal" data-delay="320">
+          <span class="interest-num">05</span>
+          <div class="interest-content">
+            <h3 data-en="Philosophy" data-id="Filsafat">Philosophy</h3>
+            <p data-en="The oldest technology: the examined question. It remains the most disruptive force ever conceived." 
+               data-id="Teknologi tertua: pertanyaan yang diperiksa. Ini tetap menjadi kekuatan paling destruktif yang pernah ada.">The oldest technology: the examined question. It remains the most disruptive force ever conceived.</p>
+          </div>
+          <span class="interest-glyph">∿</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MNFR Framework -->
+  <section class="section framework" id="framework">
+    <div class="section-inner">
+      <div class="section-label reveal">
+        <span class="num">04</span>
+        <span data-en="MNFR Framework" data-id="Kerangka MNFR">MNFR Framework</span>
+      </div>
+      <div class="framework-hero reveal">
+        <div class="framework-emblem">
+          <div class="emblem-ring ring-1"></div>
+          <div class="emblem-ring ring-2"></div>
+          <div class="emblem-ring ring-3"></div>
+          <span class="emblem-core">⬡</span>
+        </div>
+        <div class="framework-desc">
+          <h2 data-en="A System for the Future" data-id="Sebuah Sistem untuk Masa Depan">A System for the Future</h2>
+          <p data-en="The MNFR Framework is a conceptual architecture built on three pillars: Equilibrium — balance between competing forces; Protection — systems that safeguard ideas, people, and progress; Foresight — decisions made from the future, looking backward." 
+             data-id="Kerangka MNFR adalah arsitektur konseptual yang dibangun di atas tiga pilar: Keseimbangan — keseimbangan antara kekuatan yang bersaing; Perlindungan — sistem yang melindungi ide, orang, dan kemajuan; Visi ke Depan — keputusan yang dibuat dari masa depan, melihat ke belakang.">
+            The MNFR Framework is a conceptual architecture built on three pillars: Equilibrium — balance between competing forces; Protection — systems that safeguard ideas, people, and progress; Foresight — decisions made from the future, looking backward.
+          </p>
+        </div>
+      </div>
+      <div class="framework-pillars">
+        <div class="pillar glass reveal" data-delay="0">
+          <span class="pillar-icon">⚖</span>
+          <h4 data-en="Equilibrium" data-id="Keseimbangan">Equilibrium</h4>
+          <p data-en="Dynamic balance between opposing forces — not stillness, but controlled motion." 
+             data-id="Keseimbangan dinamis antara kekuatan yang berlawanan — bukan ketenangan, tetapi gerakan terkontrol.">Dynamic balance between opposing forces — not stillness, but controlled motion.</p>
+        </div>
+        <div class="pillar glass reveal" data-delay="150">
+          <span class="pillar-icon">⛨</span>
+          <h4 data-en="Protection" data-id="Perlindungan">Protection</h4>
+          <p data-en="Resilient systems that defend vision, integrity, and human potential from entropy." 
+             data-id="Sistem tangguh yang melindungi visi, integritas, dan potensi manusia dari entropi.">Resilient systems that defend vision, integrity, and human potential from entropy.</p>
+        </div>
+        <div class="pillar glass reveal" data-delay="300">
+          <span class="pillar-icon">⟳</span>
+          <h4 data-en="Foresight" data-id="Wawasan ke Depan">Foresight</h4>
+          <p data-en="Future-oriented thinking that treats tomorrow as a design brief, not a mystery." 
+             data-id="Pemikiran berorientasi masa depan yang memperlakukan hari esok sebagai brief desain, bukan misteri.">Future-oriented thinking that treats tomorrow as a design brief, not a mystery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <div class="section-label reveal">
+        <span class="num">05</span>
+        <span data-en="Contact" data-id="Kontak">Contact</span>
+      </div>
+      <div class="contact-content reveal">
+        <h2 data-en="Begin the Dialogue" data-id="Mulai Dialog">Begin the Dialogue</h2>
+        <p data-en="Ideas are meant to collide. If you're building something at the edge — let's think together." 
+           data-id="Ide dimaksudkan untuk bertabrakan. Jika Anda membangun sesuatu di tepi — mari berpikir bersama.">
+          Ideas are meant to collide. If you're building something at the edge — let's think together.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:mnfr@example.com" class="contact-link glass">
+            <span class="link-icon">✉</span>
+            <span>mnfr@example.com</span>
+          </a>
+          <a href="#" class="contact-link glass">
+            <span class="link-icon">⬡</span>
+            <span>@mnfr.space</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">MNFR</span>
+      <span class="footer-copy" data-en="Equilibrium Beyond Dimensions — All dimensions reserved." data-id="Keseimbangan Melampaui Dimensi — Semua dimensi dilindungi.">Equilibrium Beyond Dimensions — All dimensions reserved.</span>
+      <span class="footer-year">2025</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
